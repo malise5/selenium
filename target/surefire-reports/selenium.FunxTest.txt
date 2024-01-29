@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: selenium.FunxTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 18.023 s <<< FAILURE! - in selenium.FunxTest
+testLogin(selenium.FunxTest)  Time elapsed: 11.017 s  <<< ERROR!
+org.openqa.selenium.WebDriverException: 
+unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=120.0.6099.109)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-39-generic', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [87affe79407e00d9e4578ab34ca0aef0, get {url=http://127.0.0.1:8081/e-health-app}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.109, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44329}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44329/devtoo..., se:cdpVersion: 120.0.6099.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 87affe79407e00d9e4578ab34ca0aef0
+	at selenium.FunxTest.getLoginButton(FunxTest.java:75)
+	at selenium.FunxTest.testLogin(FunxTest.java:36)
+
+testAddDoctor(selenium.FunxTest)  Time elapsed: 6.921 s  <<< ERROR!
+org.openqa.selenium.WebDriverException: 
+unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=120.0.6099.109)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-39-generic', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [62c30aa31ca1cd2b1856a914b28e9858, get {url=http://127.0.0.1:8081/e-health-app}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.109, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:46745}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:46745/devtoo..., se:cdpVersion: 120.0.6099.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 62c30aa31ca1cd2b1856a914b28e9858
+	at selenium.FunxTest.getLoginButton(FunxTest.java:75)
+	at selenium.FunxTest.testAddDoctor(FunxTest.java:46)
+
